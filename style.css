@@ -1,0 +1,140 @@
+:root{
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
+    --clr-neutral-pale-blue: hsl(225, 100%, 98%);
+    --clr-neutral-desBlue: hsl(224, 23%, 55%);
+    --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    --ff-primary: 'Red Hat Display', sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+    font-size: 16px;
+}
+
+body,
+h1,
+h2,
+h3,
+p{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--clr-primary-pale-blue);
+}
+
+p{
+    color: var(--clr-neutral-desBlue);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    margin: 4rem 1.5rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.thumbnail{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+.content{
+    margin: 0px 1.5rem;
+}
+
+.title h1{
+    margin: 1.5rem 0;
+    font-weight: var(--fw-900);
+    font-size: 1.5rem;
+    color: var(--clr-neutral-dark-blue);
+}
+
+.info{
+    margin-bottom: 1.5rem; 
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.planning{
+    background-color: var(--clr-neutral-pale-blue);
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.planning .left{
+    flex-direction: row;
+}
+
+.planning .left .text{
+    margin-left: 1.3rem;
+}
+
+.planning .right a{
+    color: var(--clr-primary-bright-blue);
+    font-weight: var(--fw-700);
+}
+
+.btn1{
+    padding: 0.8rem 3.5rem;
+    color: white;
+    border: none;
+    background-color: var(--clr-primary-bright-blue);
+    font-weight: var(--fw-700);
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 1rem 1rem rgb(193, 208, 221);
+}
+
+.btn2{
+    margin-bottom: 2rem;
+    border: none;
+    background-color: white;
+    color: var(--clr-neutral-desBlue);
+    font-weight: var(--fw-700);
+}
+
+@media screen and (min-width: 1024px){
+    
+    main{
+        margin: 7rem 30rem;
+    }    
+
+    .planning .right a:active{
+        text-decoration: none;
+        color: rgb(124, 126, 200);
+    }
+
+    button:hover{
+        cursor: pointer
+    }
+
+    .btn1:active{
+        background-color: rgb(118, 108, 241); 
+    }
+
+    .btn2:active{
+        color: rgb(22, 27, 56);
+    }
+
+}
